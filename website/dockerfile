@@ -1,0 +1,18 @@
+# Stap 1: Kies een officiële Node.js image
+FROM node:18-alpine
+
+# Stap 2: Stel de werkdirectory in de container in
+WORKDIR /app
+
+# Stap 4: Installeer de projectafhankelijkheden
+RUN npm install
+
+# Stap 5: Kopieer de rest van de projectbestanden naar de container
+COPY . .
+
+# Stap 6: Stel de poort in die de applicatie zal gebruiken
+EXPOSE 3000
+
+# Stap 7: Stel het startcommando in om de applicatie uit te voeren
+CMD ["npm", "start"]
+

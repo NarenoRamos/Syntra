@@ -1,0 +1,8 @@
+geopandas
+matplotlib
+leafmap
+jupyterlab
+sqlalchemy
+psycopg2
+folium
+lonboard
